@@ -8,13 +8,13 @@ def Manutencao():
     GoToTable("Histórico de Gastos com Manutenção")
     try:
 
-        PutInitialDate("/html/body/div[1]/div[4]/form/div[1]/div[2]/div/div[1]/div[5]/div/div/div/input[1]")
+        PutInitialDate("/html/body/div[1]/div[4]/form/div[1]/div[2]/div/div[1]/div[5]/div/div/div/input[1]", True)
 
         ClickButton("/html/body/div[1]/div[4]/form/div[1]/div[2]/div[1]/div[1]/div[17]/input")
 
         ClickButton("/html/body/div[1]/div[4]/form/div[6]/div[6]/div/div/div/div[1]/div/span/button[2]")
 
-        ClickButton("/html/body/div[1]/div[4]/form/div[6]/div[2]/div[4]/a[1]")
+        ClickButton("/html/body/div[1]/div[4]/form/div[6]/div[2]/div[4]/a[2]")
 
         RenameFile("Veículo_  _ Tipo de Documento_ Todos _ Grupo de Produto_  _ Tipo de Frota_ Todas", "manutencao")
 

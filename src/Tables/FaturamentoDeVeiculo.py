@@ -15,7 +15,7 @@ def FaturamentoDeVeiculo():
 
         ClickButton("/html/body/div[1]/div[4]/form/div[1]/div[2]/div[1]/div[1]/div[12]/input")
 
-        ClickButton("/html/body/div[1]/div[4]/form/div[6]/div[2]/div[4]/a[1]")
+        ClickButton("/html/body/div[1]/div[4]/form/div[6]/div[2]/div[4]/a[2]")
 
         RenameFile("Consulta - Meta de Faturamento por Veículo", "faturamento de veiculo")
 

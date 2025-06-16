@@ -1,7 +1,10 @@
+from time import sleep
+
 from src.GoToTable import GoToTable
 from src.utils.ClickButton import ClickButton
 from src.utils.PutInitialDate import PutInitialDate
 from src.utils.RenameFile import RenameFile
+from src.utils.WaitLoadPage import WaitLoadPage
 
 
 def Abastecimento():
@@ -14,9 +17,15 @@ def Abastecimento():
 
         ClickButton("/html/body/div[1]/div[4]/form/div[6]/div[5]/div/div/div/div[1]/div/span[2]/button[2]")
 
+        WaitLoadPage()
+        sleep(4)
+
         ClickButton("/html/body/div[1]/div[4]/form/div[6]/div[5]/div/div/div/div[1]/div/span/button[2]")
 
-        ClickButton("/html/body/div[1]/div[4]/form/div[6]/div[2]/div[4]/a[1]")
+        WaitLoadPage()
+        sleep(4)
+
+        ClickButton("/html/body/div[1]/div[4]/form/div[6]/div[2]/div[4]/a[2]")
 
         RenameFile("Consulta Abastecimento (Modelo 2)", "abastecimento")
 

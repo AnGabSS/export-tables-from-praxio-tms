@@ -1,8 +1,6 @@
 import os
 import time
 
-import win32con
-import win32gui
 from dotenv import load_dotenv
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
@@ -21,21 +19,11 @@ prefs = {
 }
 chrome_options.add_experimental_option("prefs", prefs)
 
-chrome_options.add_argument('--headless=new')
-
 # Iniciar navegador
 browser = webdriver.Chrome(options=chrome_options)
 browser.get("https://nulog.avaconcloud.com/")
 
-# Aguarda o carregamento da página e da janela
+# Aguarda o carregamento da página
 time.sleep(2)
 
-# Tenta localizar a janela pelo título
-window_title = browser.title
-hwnd = win32gui.FindWindow(None, window_title)
-
-if hwnd:
-    win32gui.ShowWindow(hwnd, win32con.SW_MINIMIZE)
-else:
-    print(f"Janela com título '{window_title}' não encontrada.")
-    browser.minimize_window()
+browser.minimize_window()

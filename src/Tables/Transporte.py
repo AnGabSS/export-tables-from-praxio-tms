@@ -14,12 +14,14 @@ def Transporte():
 
         PutInitialDate("/html/body/div[1]/div[4]/form/div[5]/div[1]/div[1]/div[5]/div/div/input[1]")
 
+        ClickButton("/html/body/div[1]/div[4]/form/div[5]/div[1]/div[1]/div[10]/select/option[6]")
+
         ClickButton("/html/body/div[1]/div[4]/form/div[5]/div[1]/div[1]/div[18]/button")
 
         sleep(1)
         WaitLoadPage()
 
-        ClickButton("/html/body/div[1]/div[4]/form/div[5]/div[1]/div[2]/div/div[2]/div[4]/a[1]")
+        ClickButton("/html/body/div[1]/div[4]/form/div[5]/div[1]/div[2]/div/div[2]/div[4]/a[2]")
 
         RenameFile("Filial_  _ Unidade_  _ Período_ ", "transporte")
 

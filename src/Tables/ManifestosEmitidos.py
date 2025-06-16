@@ -14,7 +14,7 @@ def ManifestosEmitidos():
 
         ClickButton("/html/body/div[1]/div[4]/form/div[6]/div[6]/div/div/div/div[1]/div/span/button[2]")
 
-        ClickButton("/html/body/div[1]/div[4]/form/div[6]/div[2]/div[4]/a[1]")
+        ClickButton("/html/body/div[1]/div[4]/form/div[6]/div[2]/div[4]/a[2]")
 
         RenameFile("Filial_ 1 _ Unidade_ 1 _ Período_ ", "manifestos emitidos")
 

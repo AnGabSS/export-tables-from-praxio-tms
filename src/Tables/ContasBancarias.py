@@ -8,7 +8,7 @@ def ContasBancarias():
     GoToTable("Contas Bancárias")
     try:
         WaitLoadPage()
-        ClickButton("/html/body/div[1]/div[4]/form/div[5]/div[1]/div[2]/div/div[2]/div[4]/a[1]")
+        ClickButton("/html/body/div[1]/div[4]/form/div[5]/div[1]/div[2]/div/div[2]/div[4]/a[2]")
         RenameFile("Contas", "contas bancarias")
     finally:
         # Fecha o navegador após a execução
